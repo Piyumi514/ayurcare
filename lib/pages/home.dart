@@ -1,8 +1,8 @@
 // ignore_for_file: camel_case_types
 
-import 'package:ayurcare/login.dart';
-import 'package:ayurcare/plant_recognition.dart';
-import 'package:ayurcare/signup_page.dart';
+import 'package:ayurcare/pages/login.dart';
+import 'package:ayurcare/pages/plant_recognition.dart';
+import 'package:ayurcare/pages/signup_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {

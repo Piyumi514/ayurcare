@@ -1,18 +1,19 @@
 // ignore_for_file: camel_case_types
 
+
 import 'package:ayurcare/decoction_page.dart';
-import 'package:ayurcare/doctor_details.dart';
-import 'package:ayurcare/home_remedies.dart';
-import 'package:ayurcare/plant_recognition.dart';
-import 'package:ayurcare/submit_page.dart';
+import 'package:ayurcare/pages/doctor_details.dart';
+import 'package:ayurcare/remedies/home_remedies.dart';
+import 'package:ayurcare/pages/plant_recognition.dart';
+import 'package:ayurcare/pages/submit_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const disease());
+  runApp(const jointpain());
 }
 
-class disease extends StatelessWidget {
-  const disease({super.key});
+class jointpain extends StatelessWidget {
+  const jointpain({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -85,30 +86,27 @@ class myProject extends StatelessWidget {
                 ),
                 const Center(
                   child: Text(
-                    "ASTHMA",
+                    "JOINT PAIN",
                     style: TextStyle(
+                      fontFamily: 'Times New Roman',
                         color: Color.fromARGB(255, 3, 84, 3),
                         fontSize: 35,
                         fontWeight: FontWeight.w900),
                   ),
                 ),
-                const SizedBox(
-                  height: 35,
-                ),
                 const Padding(
-                  padding: EdgeInsets.all(2.0),
+                  padding: EdgeInsets.all(30.0),
                   child: Text(
-                    "Asthma is a chronic lung disease affecting people of all ages. It is caused by inflammation and muscle tightening around the airways, which makes it harder to breathe. Symptoms can include coughing, wheezing, shortness of breath and chest tightness.",
-                    textAlign: TextAlign.center,
+                    "Joint pain, often associated with arthritis, is a condition characterized by discomfort, inflammation, and stiffness in the joints. Arthritis can affect various joints in the body and can be caused by factors such as age, injury, autoimmune diseases, or wear and tear on the joints over time. In Sri Lanka, Ayurvedic medicine offers several remedies for managing joint pain associated with arthritis. ",
+                    textAlign:TextAlign.justify,
                     style: TextStyle(
+                      fontFamily: 'Times New Roman',
                         color: Colors.black,
                         fontSize: 16,
                         fontWeight: FontWeight.w500),
                   ),
                 ),
-                const SizedBox(
-                  height: 40,
-                ),
+                
                 Center(
                   child: GestureDetector(
                     onTap: () {
@@ -119,8 +117,8 @@ class myProject extends StatelessWidget {
                       );
                     },
                     child: Container(
-                      width: 200,
-                      height: 50,
+                      width: 175,
+                      height: 40,
                       padding: const EdgeInsets.all(10),
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(50),
@@ -129,7 +127,7 @@ class myProject extends StatelessWidget {
                       child: const Center(
                         child: Text(
                           "Home Remedies",
-                          style: TextStyle(color: Colors.white, fontSize: 18),
+                          style: TextStyle(color: Colors.white, fontSize: 16),
                         ),
                       ),
                     ),
@@ -148,8 +146,8 @@ class myProject extends StatelessWidget {
                       );
                     },
                     child: Container(
-                      width: 200,
-                      height: 50,
+                       width: 175,
+                      height: 40,
                       padding: const EdgeInsets.all(10),
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(50),
@@ -158,7 +156,7 @@ class myProject extends StatelessWidget {
                       child: const Center(
                         child: Text(
                           "Decoctions",
-                          style: TextStyle(color: Colors.white, fontSize: 18),
+                          style: TextStyle(color: Colors.white, fontSize: 16),
                         ),
                       ),
                     ),
@@ -177,8 +175,8 @@ class myProject extends StatelessWidget {
         begin: Alignment.topCenter,
         end: Alignment.bottomCenter,
         colors: [
-          Color.fromARGB(204, 52, 53, 52),
-          Color.fromARGB(204, 175, 180, 180),
+          Color.fromARGB(204, 217, 221, 217),
+          Color.fromARGB(204, 197, 205, 205),
         ],
       ),
     ),
@@ -190,7 +188,7 @@ class myProject extends StatelessWidget {
           'Connect with your districtial doctor',
           textAlign: TextAlign.center,
           style: TextStyle(
-            color: Color.fromARGB(255, 244, 247, 244),
+            color: Color.fromARGB(255, 10, 84, 10),
             fontSize: 18,
             fontWeight: FontWeight.bold,
           ),
@@ -203,12 +201,12 @@ class myProject extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => const doctor(exportData: null,),
+                  builder: (context) => const DoctorPage(exportData: null,),
                 ),
               );
             },
             style: ElevatedButton.styleFrom(
-              backgroundColor: const Color.fromARGB(255, 163, 224, 163),
+              backgroundColor: const Color.fromARGB(255, 4, 167, 135),
             ),
             child: const Text(
               'Click here',
@@ -236,8 +234,8 @@ class myProject extends StatelessWidget {
         begin: Alignment.topCenter,
         end: Alignment.bottomCenter,
         colors: [
-          Color.fromARGB(204, 52, 53, 52),
-          Color.fromARGB(204, 175, 180, 180),
+          Color.fromARGB(204, 217, 221, 217),
+          Color.fromARGB(204, 197, 205, 205),
         ],
       ),
     ),
@@ -249,7 +247,7 @@ class myProject extends StatelessWidget {
           'Recognize the plant',
           textAlign: TextAlign.center,
           style: TextStyle(
-            color: Color.fromARGB(255, 244, 247, 244),
+            color: Color.fromARGB(255, 10, 84, 10),
             fontSize: 18,
             fontWeight: FontWeight.bold,
           ),
@@ -267,7 +265,7 @@ class myProject extends StatelessWidget {
               );
             },
             style: ElevatedButton.styleFrom(
-              backgroundColor: const Color.fromARGB(255, 163, 224, 163),
+               backgroundColor: const Color.fromARGB(255, 4, 167, 135),
             ),
             child: const Text(
               'Click here',

@@ -1,6 +1,6 @@
 // ignore_for_file: camel_case_types, library_private_types_in_public_api
 
-import 'package:ayurcare/home_remedies.dart';
+import 'package:ayurcare/remedies/home_remedies.dart';
 import 'package:flutter/material.dart';
 
 void main() {

@@ -2,7 +2,7 @@
 
 import 'dart:async';
 
-import 'package:ayurcare/home.dart';
+import 'package:ayurcare/pages/home.dart';
 import 'package:flutter/material.dart';
 
 void main() {

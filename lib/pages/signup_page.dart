@@ -2,9 +2,9 @@
 
 
 import 'package:animate_do/animate_do.dart';
-import 'package:ayurcare/home.dart';
-import 'package:ayurcare/login.dart';
-import 'package:ayurcare/submit_page.dart';
+import 'package:ayurcare/pages/home.dart';
+import 'package:ayurcare/pages/login.dart';
+import 'package:ayurcare/pages/submit_page.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(
